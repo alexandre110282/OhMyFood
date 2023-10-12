@@ -1,29 +1,19 @@
-@font-face {
-    font-family: "shrikhandregular";
-    src: url("fonts/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand-regular-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
-    font-family: "robotothin";
-    src: url("fonts/roboto-thin-webfont.woff2") format("woff2"), url("fonts/roboto-thin-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
 body {
-    font-family: robotothin;
+    font-family: 'roboto', sans-serif;
     max-width: 425px;
+    margin: 0;
   }
 
 
   header{
-    h2{
+    .title{
         text-align:center;
-    }
-    i{
-        position:absolute;
+        font-family: 'shrikhand', serif;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin-right: 25%;
+        gap: 17%;
     }
     a{
       text-decoration: none;
@@ -31,19 +21,17 @@ body {
     }
 }
   
-.logo {
-    font-family: Shrikhandregular;
-  }
-  
 main {
     background-color: #e8f9f5;
     border-radius: 30px 30px 0px 0px;
     margin-top: -20%;
     position: relative;
     padding-bottom: 2%;
-      .logo{
+      .logo {
         padding-top:7%;
         margin:5%;
+        font-family: 'shrikhand', serif;
+        font-size: 30px;
       }
       h2 i{
         float:right;
@@ -77,20 +65,34 @@ main {
 header img{
   object-fit: cover;
   width: 100%;
-  height: 250px;
+  height: 20em;
+}
+
+ h3::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  margin-top: 4px;
+  background: #99E2D0;
 }
 
 .entrees li {
   animation-name: fadein;
   animation-duration: 2000ms;}
 
-.dish li{
+.plats li{
   animation-name: fadein;
   animation-duration: 4000ms;}
 
 .dessert li{
   animation-name: fadein;
     animation-duration: 6000ms;
+}
+
+hr{
+  width: 10%;
 }
 
 main li {
@@ -109,10 +111,13 @@ main li {
   
       .price{
       margin-left:16%;
-      }
-
-      p {
       font-weight: bold;
+      align-self: flex-end;
+      }
+      .dish {
+        font-weight: bold;
+      }
+      p {
       margin: 0%;
       font-size: 0.9rem;
       padding-top: 3%;
