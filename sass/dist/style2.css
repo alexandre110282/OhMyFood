@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("fonts/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotothin";
+  src: url("fonts/roboto-thin-webfont.woff2") format("woff2"), url("fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: robotothin;
+  max-width: 425px;
+}
+
+header h2 {
+  text-align: center;
+}
+header i {
+  position: absolute;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  font-family: Shrikhandregular;
+}
+
+main {
+  background-color: #e8f9f5;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -20%;
+  position: relative;
+  padding-bottom: 2%;
+}
+main .logo {
+  padding-top: 7%;
+  margin: 5%;
+}
+main h2 i {
+  float: right;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
+  }
+  90% {
+    position: absolute;
+  }
+  100% {
+    transform: rotate(360deg);
+    display: none;
+  }
+}
+header img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.entrees li {
+  animation-name: fadein;
+  animation-duration: 2000ms;
+}
+
+.dish li {
+  animation-name: fadein;
+  animation-duration: 4000ms;
+}
+
+.dessert li {
+  animation-name: fadein;
+  animation-duration: 6000ms;
+}
+
+main li {
+  border-radius: 11px;
+  border: 2px solid white;
+  margin-top: 1px;
+  box-shadow: 1px 1px 5px 3px #99E2D0;
+  background-color: white;
+  list-style-type: none;
+  margin-bottom: 4%;
+  margin-left: -10%;
+  margin-right: 4%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+main li .price {
+  margin-left: 16%;
+}
+main li p {
+  font-weight: bold;
+  margin: 0%;
+  font-size: 0.9rem;
+  padding-top: 3%;
+  width: 263px;
+}
+
+li:hover > .check {
+  background-color: #99E2D0;
+  width: 20%;
+  transition: all 500ms ease-in;
+  transform-origin: right;
+}
+
+li:hover > .check i {
+  display: block;
+}
+
+.check {
+  color: white;
+  width: 0%;
+  border-radius: 10px;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check i {
+  animation: fadein, spin;
+  animation-duration: 1000ms;
+  display: none;
+}
+
+.btn_order {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+  margin: 10% 25%;
+  padding: 0.05px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 84% auto;
+  color: white;
+  box-shadow: 0px 0px 6px 5px #99E2D0;
+  border-radius: 50px;
+}
+
+.btn_order:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #303030;
+  color: white;
+  padding: 1%;
+}
+footer li {
+  list-style-type: none;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
