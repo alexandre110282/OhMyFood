@@ -1,74 +1,80 @@
 body {
-    font-family: 'roboto', sans-serif;
-    max-width: 425px;
-    margin: 0;
-  }
-
-
-  header{
-    .title{
-        text-align:center;
-        font-family: 'shrikhand', serif;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-        margin-right: 25%;
-        gap: 17%;
-    }
-    a{
-      text-decoration: none;
-      color: black;
-    }
+  font-family: 'roboto', sans-serif;
+  max-width: 425px;
+  margin: 0;
 }
-  
+
+
+header {
+  .title {
+    text-align: center;
+    font-family: 'shrikhand', serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-right: 25%;
+    gap: 17%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 main {
-    background-color: #e8f9f5;
-    border-radius: 30px 30px 0px 0px;
-    margin-top: -20%;
-    position: relative;
-    padding-bottom: 2%;
-      .logo {
-        padding-top:7%;
-        margin:5%;
-        font-family: 'shrikhand', serif;
-        font-size: 30px;
-      }
-      h2 i{
-        float:right;
-      }
-    }
-  
+  background-color: #e8f9f5;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -20%;
+  position: relative;
+  padding-bottom: 2%;
+
+  .logo {
+    padding-top: 7%;
+    margin: 5%;
+    font-family: 'shrikhand', serif;
+    font-size: 30px;
+  }
+
+  h2 i {
+    float: right;
+  }
+}
+
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity: 0;
   }
 
+  to {
+    opacity: 1;
+  }
+}
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      position: absolute;
-    }
-    90%{
-      position: absolute;
-    }
-    100% {
-      transform: rotate(360deg);
-      display: none;
-    }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
   }
 
-header img{
+  90% {
+    position: absolute;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    display: none;
+  }
+}
+
+header img {
   object-fit: cover;
   width: 100%;
   height: 20em;
 }
 
- h3::after{
+h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -78,21 +84,19 @@ header img{
   background: #99E2D0;
 }
 
-.entrees li{
+.entrees li {
   animation-name: fadein;
-  animation-duration: 2000ms;}
-
-.plats li{
-  animation-name: fadein;
-  animation-duration: 4000ms;}
-
-.dessert li{
-  animation-name: fadein;
-    animation-duration: 6000ms;
+  animation-duration: 2000ms;
 }
 
-hr{
-  width: 10%;
+.plats li {
+  animation-name: fadein;
+  animation-duration: 4000ms;
+}
+
+.dessert li {
+  animation-name: fadein;
+  animation-duration: 6000ms;
 }
 
 main li {
@@ -108,74 +112,79 @@ main li {
   justify-content: space-between;
   height: 73px;
   width: 100%;
-  
-      .price{
-      margin-left:16%;
-      font-weight: bold;
-      align-self: flex-end;
-      }
-      .dish {
-        font-weight: bold;
-      }
-      p {
-      font-size: 0.9rem;
-      width: 263px;
-}}
 
-li:hover > .check {
+  .price {
+    margin-left: 16%;
+    font-weight: bold;
+    align-self: flex-end;
+  }
+
+  .dish {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 0.9rem;
+    width: 263px;
+  }
+}
+
+li:hover>.check {
   background-color: #99E2D0;
   width: 20%;
   transition: all 500ms ease-in;
   transform-origin: right;
 }
 
-li:hover > .check i{
+li:hover>.check i {
   display: block;
 }
 
 .check {
-  color:white;
+  color: white;
   width: 0%;
   border-radius: 0 10px 10px 0;
   padding: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  i{  
+
+  i {
     animation: fadein, spin;
-    
+
     animation-duration: 1000ms;
     display: none;
-}
-}
- 
-.btn_order {
-    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
-    margin: 10% 25%;
-    padding: 0.05px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 84% auto;
-    color: white;
-    box-shadow: 0px 0px 6px 5px #99E2D0;
-    border-radius: 50px;
   }
-  
-.btn_order:hover {
-    background-position: right center;
-    text-decoration: none;
-  }
-  
-footer {
-    background-color: #303030;
-    color: white;
-    padding: 1%;
-      li {
-        list-style-type: none;
+}
 
-      a{
-        text-decoration: none;
-        color: white;
-}}}
-  
+.btn_order {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+  margin: 10% 25%;
+  padding: 0.05px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 84% auto;
+  color: white;
+  box-shadow: 0px 0px 6px 5px #99E2D0;
+  border-radius: 50px;
+}
+
+.btn_order:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #303030;
+  color: white;
+  padding: 1%;
+
+  li {
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
