@@ -1,138 +1,139 @@
-<DOCTYPE html>
-    <html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-            integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <title>Ohmyfood</title>
-        <link rel="stylesheet" href="sass/dist/cartestyle.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="sass/dist/cartestyle.css">
+</head>
 
-    <body>
+<body>
 
-        <section>
-            <span class="loader"></span>
+    <div>
+        <span class="loader"></span>
+    </div>
+
+    <header>
+        <h1 class="logo">Ohmyfood</h1>
+        <div class="localisation">
+            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        </div>
+
+        <div class="book">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <a href="#restaurant">
+                <div class="btn_explore">
+                    <p> Explorer nos restaurants</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="tutorial">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li>
+                    <div class="number">1</div>
+                    <div>
+                        <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="number">2</div>
+                    <div>
+                        <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="number">3</div>
+                    <div>
+                        <p><i class="fas fa-store"></i>Dégustez au restaurant</p>
+                    </div>
+                </li>
+            </ol>
         </section>
 
-        <header>
-            <h1 class="logo">Ohmyfood</h1>
-            <div class="localisation">
-                <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        <section id="restaurant">
+            <h2>Restaurants</h2>
+
+            <div class="btn"><a href="palettegout.html"><img src="images/restaurants/palettegout.jpg"
+                        alt="La palette du goût"></a>
+                <div class="ville">
+                    <div class="ville__resto">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" class="heart1" id="heart1">
+                        <label for="heart1"></label>
+                    </div>
+                </div>
             </div>
 
-            <div class="book">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <a href="#restaurant">
-                    <div class="btn_explore">
-                        <p> Explorer nos restaurants</p>
+            <div class="btn"><a href="noteenchantee.html"><img src="images/restaurants/noteenchantee.jpg"
+                        alt="La note enchantée"></a>
+                <div class="ville">
+                    <div class="ville__resto">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
                     </div>
-                </a>
+                    <div class="check">
+                        <input type="checkbox" class="heart2" id="heart2">
+                        <label for="heart2"></label>
+                    </div>
+                </div>
             </div>
-        </header>
 
-        <main>
-            <section id="tutorial">
-                <h2>Fonctionnement</h2>
-                <ol>
-                    <li>
-                        <div class="number">1</div>
-                        <div>
-                            <p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="number">2</div>
-                        <div>
-                            <p><i class="fas fa-list-ul"></i>Composez votre menu</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="number">3</div>
-                        <div>
-                            <p><i class="fas fa-store"></i>Dégustez au restaurant</p>
-                        </div>
-                    </li>
-                </ol>
-            </section>
-
-            <section id="restaurant">
-                <h2>Restaurants</h2>
-
-                <div class="btn"><a href="palettegout.html"><img src="images/restaurants/palettegout.jpg" height="200"
-                            width="280" alt="La palette du goût" /></a>
-                    <div class="ville">
-                        <div class="ville__resto">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" class="heart1" id="heart1">
-                            <label for="heart1"></label>
-                        </div>
+            <div class="btn"><a href="alafrançaise.html"><img src="images/restaurants/alafrançaise.jpg"
+                        alt="À la française"></a>
+                <div class="ville">
+                    <div class="ville__resto">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" class="heart3" id="heart3">
+                        <label for="heart3"></label>
                     </div>
                 </div>
+            </div>
 
-                <div class="btn"><a href="noteenchantee.html"><img src="images/restaurants/noteenchantee.jpg"
-                            height="200" width="280" alt="La note enchantée" /></a>
-                    <div class="ville">
-                        <div class="ville__resto">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" class="heart2" id="heart2">
-                            <label for="heart2"></label>
-                        </div>
+            <div class="btn"><a href="delicedessens.html"><img src="images/restaurants/delicedessens.jpg"
+                        alt="Le délice de sens"></a>
+                <div class="ville">
+                    <div class="ville__resto">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" class="heart4" id="heart4">
+                        <label for="heart4"></label>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="btn"><a href="alafrançaise.html"><img src="images/restaurants/alafrançaise.jpg" height="200"
-                            width="280" alt="À la française" /></a>
-                    <div class="ville">
-                        <div class="ville__resto">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" class="heart3" id="heart3">
-                            <label for="heart3"></label>
-                        </div>
-                    </div>
-                </div>
+    </main>
 
-                <div class="btn"><a href="delicedessens.html"><img src="images/restaurants/delicedessens.jpg"
-                            height="200" width="280" alt="Le délice de sens" /></a>
-                    <div class="ville">
-                        <div class="ville__resto">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <div class="check">
-                            <input type="checkbox" class="heart4" id="heart4">
-                            <label for="heart4"></label>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <footer>
+        <h4 class="logo">Ohmyfood</h4>
+        <nav class="menu">
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposez un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li><a href="mailto:nullepart@mozilla.org">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 
-        </main>
+</body>
 
-        <footer>
-            <h4 class="logo">Ohmyfood</h4>
-            <nav class="menu">
-                <ul>
-                    <li><i class="fas fa-utensils"></i>Proposez un restaurant</a></li>
-                    <li><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                    <li>Mentions légales</a></li>
-                    <li><a href="mailto:nullepart@mozilla.org">Contact</a></li>
-                </ul>
-            </nav>
-        </footer>
-
-    </body>
-
-    </html>
+</html>

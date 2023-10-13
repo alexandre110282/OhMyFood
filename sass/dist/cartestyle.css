@@ -16,35 +16,6 @@ body {
     opacity: 1;
   }
 }
-.loader {
-  position: relative;
-  top: 50%;
-  right: 35%;
-  border-radius: 50%;
-  border: 6px solid #99e2d0;
-  width: 26%;
-  height: 13%;
-  animation: fadeout 3s linear;
-}
-
-.loader::after {
-  content: "";
-  position: relative;
-  top: -6px;
-  left: -6px;
-  width: 100%;
-  height: 100%;
-  border: 6px solid transparent;
-  border-top-color: white;
-  border-radius: 50%;
-  animation: spin 3s linear;
-}
-
-header, main, footer {
-  animation-name: fadein;
-  animation-duration: 3100ms;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -71,63 +42,89 @@ header, main, footer {
     opacity: 0;
   }
 }
+.loader {
+  position: relative;
+  top: 50%;
+  right: 35%;
+  border-radius: 50%;
+  border: 6px solid #99e2d0;
+  width: 26%;
+  height: 13%;
+  animation: fadeout 3s linear;
+}
+.loader::after {
+  content: "";
+  position: relative;
+  top: -6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  border: 6px solid transparent;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 3s linear;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+header,
+main,
+footer {
+  animation-name: fadein;
+  animation-duration: 3100ms;
+}
+
 .logo {
-  font-family: Shrikhandregular;
+  font-family: "Shrikhand", serif;
 }
 
 header {
   text-align: center;
 }
-
 header i {
   margin-right: 2%;
 }
-
-.localisation p {
+header .localisation p {
   background-color: #E8E8E8;
   padding: 3%;
   box-shadow: inset 0 7px 6px -7px rgba(0, 0, 0, 0.4);
 }
-
-.book {
+header .book {
   text-align: center;
   background-color: rgba(153, 226, 208, 0.4);
   margin-top: -16px;
   padding: 8%;
 }
-
-.btn_explore {
-  background-image: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+header .book a {
+  text-decoration: none;
 }
 
 .btn_explore {
+  background-image: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   margin: auto;
   margin-bottom: 10px;
   padding: 1em;
-  text-align: center;
   transition: 0.5s;
-  background-size: 200% auto;
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 50px;
   width: 11em;
 }
-
 .btn_explore:hover {
   background-position: right center;
   text-decoration: none;
   filter: brightness(1.1);
   box-shadow: 1px 1px 15px black;
 }
-
 .btn_explore p {
   margin: 0;
 }
 
-.book a {
-  text-decoration: none;
+#tutorial {
+  background-color: white;
 }
-
 #tutorial li {
   border-radius: 16px;
   box-shadow: 1px 4px 6px rgba(153, 226, 208, 0.4);
@@ -138,24 +135,28 @@ header i {
   font-weight: bold;
   background-color: #e8f9f5;
 }
-
 #tutorial li:hover {
   filter: brightness(1.1);
   box-shadow: 6px 3px 3px #99e2d0;
   background-color: rgba(147, 86, 220, 0.3);
 }
-
-#tutorial {
-  background-color: white;
-}
-
 #tutorial i {
   margin-right: 20px;
   margin-left: 10px;
 }
-
-.fa-store {
-  color: purple;
+#tutorial p {
+  margin-bottom: 2px;
+  margin-top: 0%;
+}
+#tutorial .number {
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 6.5%;
+  background-color: #9356DC;
+  padding: 0px;
+  text-align: center;
+  margin-left: -11%;
 }
 
 input[type=checkbox].heart1 {
@@ -234,22 +235,20 @@ input[type=checkbox].heart4:checked + label::before {
   font-weight: 900;
 }
 
-.check {
-  margin: 5% 1% 1% 1%;
-}
-
 #restaurant {
   margin-top: 10%;
   background-color: rgba(153, 226, 208, 0.4);
   padding: 2%;
   margin-bottom: -8%;
 }
-
 #restaurant img {
   width: 100%;
   border-radius: 4% 4% 0 0;
   object-fit: cover;
-  height: 24%;
+  height: 11em;
+}
+#restaurant .check {
+  margin: 5% 1% 1% 1%;
 }
 
 .ville {
@@ -257,42 +256,23 @@ input[type=checkbox].heart4:checked + label::before {
   justify-content: space-between;
   margin-left: 4%;
 }
-
-.ville__resto {
+.ville .ville__resto {
   padding: 1em;
 }
-
-.ville p, h3 {
+.ville p,
+.ville h3 {
   margin: 0;
-}
-
-.number {
-  color: white;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  width: 6.5%;
-  background-color: #9356DC;
-  padding: 0px;
-  text-align: center;
-  margin-left: -11%;
 }
 
 main {
   align-items: center;
   padding-bottom: 2%;
 }
-
-#tutorial p {
-  margin-bottom: 2px;
-  margin-top: 0%;
-}
-
-main h2 {
+main main h2 {
   margin-left: 4%;
   padding-top: 1%;
 }
-
-main i {
+main main i {
   transition: color 1s linear;
 }
 
@@ -302,8 +282,7 @@ main i {
   background-color: white;
   margin-bottom: 4%;
 }
-
-.btn:hover:hover {
+.btn:hover {
   filter: brightness(1.1);
   box-shadow: 1px 1px 15px black;
 }
