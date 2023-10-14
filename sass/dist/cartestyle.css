@@ -16,19 +16,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    position: absolute;
-  }
-  90% {
-    position: absolute;
-  }
-  100% {
-    transform: rotate(360deg);
-    display: none;
-  }
-}
 @keyframes fadeout {
   0% {
     opacity: 1;
@@ -42,14 +29,24 @@ body {
     opacity: 0;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
+  }
+  100% {
+    position: absolute;
+    transform: rotate(360deg);
+    display: none;
+  }
+}
 .loader {
   position: relative;
   top: 50%;
   right: 35%;
   border-radius: 50%;
-  border: 6px solid #99e2d0;
-  width: 26%;
-  height: 13%;
+  width: 80px;
+  height: 80px;
   animation: fadeout 3s linear;
 }
 .loader::after {
@@ -59,8 +56,8 @@ body {
   left: -6px;
   width: 100%;
   height: 100%;
-  border: 6px solid transparent;
-  border-top-color: white;
+  border: 6px solid #99E2D0;
+  border-color: #99E2D0 transparent #9356DC transparent;
   border-radius: 50%;
   animation: spin 3s linear;
 }

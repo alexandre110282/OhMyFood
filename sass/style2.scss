@@ -4,6 +4,33 @@ body {
   margin: 0;
 }
 
+@keyframes slide-in-left {
+  0% {
+
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 header {
   .title {
@@ -84,19 +111,47 @@ h3::after {
   background: #99E2D0;
 }
 
-.entrees li {
-  animation-name: fadein;
-  animation-duration: 2000ms;
+.entrees {
+  .one {
+    animation: slide-in-left 1000ms;
+  }
+
+  .two {
+    animation: slide-in-right 1200ms;
+
+  }
+
+  .three {
+    animation: slide-in-left 1400ms;
+  }
 }
 
-.plats li {
-  animation-name: fadein;
-  animation-duration: 4000ms;
+.plats {
+  .four {
+    animation: slide-in-right 1600ms;
+  }
+
+  .five {
+    animation: slide-in-left 1800ms;
+  }
+
+  .six {
+    animation: slide-in-right 2000ms;
+  }
 }
 
-.dessert li {
-  animation-name: fadein;
-  animation-duration: 6000ms;
+.dessert {
+  .seven {
+    animation: slide-in-left 2200ms;
+  }
+
+  .eight {
+    animation: slide-in-right 2400ms;
+  }
+
+  .nine {
+    animation: slide-in-left 2600ms;
+  }
 }
 
 main li {
@@ -114,7 +169,8 @@ main li {
   width: 100%;
 
   .price {
-    margin-left: 16%;
+    margin-right: 7px;
+    margin-bottom: 6px;
     font-weight: bold;
     align-self: flex-end;
   }
@@ -123,9 +179,15 @@ main li {
     font-weight: bold;
   }
 
+  .menu {
+    padding: 4%;
+    overflow: hidden;
+    width: 19em;
+  }
+
   p {
     font-size: 0.9rem;
-    width: 263px;
+    margin: 5px;
   }
 }
 
