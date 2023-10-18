@@ -1,8 +1,12 @@
 body {
   font-family: 'roboto', sans-serif;
-  max-width: 425px;
+
   margin: 0;
 }
+
+$main-color: rgba(153, 226, 208, 0.2);
+$secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+
 
 @keyframes fadein {
   0% {
@@ -72,10 +76,6 @@ body {
 }
 
 
-.fa-store {
-  color: #9356DC;
-}
-
 header,
 main,
 footer {
@@ -97,38 +97,36 @@ header {
   .localisation p {
     background-color: #E8E8E8;
     padding: 3%;
-    box-shadow: inset 0 7px 6px -7px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 12px 6px -7px rgba(0, 0, 0, 0.4);
   }
 
-  .book {
+  .localisation__book {
     text-align: center;
-    background-color: rgba(153, 226, 208, 0.4);
+    background-color: $main-color;
     margin-top: -16px;
     padding: 8%;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
   }
 }
 
+
 .btn_explore {
-  background-image: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: $secondary-color;
   ;
   margin: auto;
   margin-bottom: 10px;
   padding: 1em;
   transition: 0.5s;
   color: white;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: rgba(50, 50, 93, .25) 0px 2px 10px 0px;
   border-radius: 50px;
   width: 11em;
 
   &:hover {
-    background-position: right center;
-    text-decoration: none;
     filter: brightness(1.1);
-    box-shadow: 1px 1px 15px black;
   }
 
   p {
@@ -140,26 +138,40 @@ header {
 #tutorial {
   background-color: white;
 
+
+  ol {
+    list-style-type: none;
+    counter-reset: compteur;
+  }
+
+
+
   li {
+    counter-increment: compteur;
     border-radius: 16px;
-    box-shadow: 1px 4px 6px rgba(153, 226, 208, 0.4);
+    box-shadow: 1px 4px 6px $main-color;
     padding: 5%;
     margin-top: 5%;
-    margin-right: 12%;
+    margin-right: 7%;
     display: flex;
     font-weight: bold;
     background-color: #e8f9f5;
 
-    &:hover {
-      filter: brightness(1.1);
-      box-shadow: 6px 3px 3px rgba(153, 226, 208);
-      background-color: rgba(147, 86, 220, 0.3);
+    &::before {
+      content: counter(compteur);
+      background-color: #9356dc;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      padding: 1px;
+      text-align: center;
+      margin-left: -9%;
     }
   }
 
   i {
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   p {
@@ -167,16 +179,22 @@ header {
     margin-top: 0%;
   }
 
-  .number {
+  .tutorial__number {
     color: white;
     border: 1px solid transparent;
     border-radius: 50%;
-    width: 6.5%;
+
     background-color: #9356DC;
-    padding: 0px;
+    padding: 1px 7px;
     text-align: center;
-    margin-left: -11%;
+    margin-left: -6.5%;
+    position: absolute;
   }
+
+  .fa-store {
+    color: #9356DC;
+  }
+
 }
 
 input[type="checkbox"].heart1 {
@@ -258,8 +276,8 @@ input[type="checkbox"].heart4:checked+label::before {
 
 #restaurant {
   margin-top: 10%;
-  background-color: rgba(153, 226, 208, 0.4);
-  padding: 2%;
+  background-color: $main-color;
+  padding: 5%;
   margin-bottom: -8%;
 
 
@@ -268,52 +286,57 @@ input[type="checkbox"].heart4:checked+label::before {
     border-radius: 4% 4% 0 0;
     object-fit: cover;
     height: 11em;
+    transition: object-position 500ms ease-out, -o-object-position 500ms ease-out;
   }
 
   .check {
     margin: 5% 1% 1% 1%;
   }
+
+  .ville {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+
+    .ville__resto {
+      padding: 3%;
+    }
+
+    p,
+    h3 {
+      margin: 0;
+    }
+  }
 }
 
-.ville {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 4%;
+.new {
 
-  .ville__resto {
-    padding: 1em;
-  }
-
-  p,
-  h3 {
-    margin: 0;
-  }
+  position: absolute;
+  right: 10%;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  padding: 0.3em 0.8rem;
+  color: #2c9c81;
+  font-size: .9rem;
+  font-weight: 700;
 }
+
 
 main {
   align-items: center;
   padding-bottom: 2%;
 
-  main h2 {
+  h2 {
     margin-left: 4%;
     padding-top: 1%;
-  }
-
-  main i {
-    transition: color 1s linear;
   }
 }
 
 .btn {
   border-radius: 13px;
-  box-shadow: 3px 0px 3px #99E2D0;
   background-color: white;
   margin-bottom: 4%;
 
-  &:hover {
-    filter: brightness(1.1);
-    box-shadow: 1px 1px 15px black;
-  }
 }
 
 footer {
@@ -339,4 +362,8 @@ footer {
     margin-left: 1px;
     width: 25px;
   }
+}
+
+.work {
+  background-color: green;
 }

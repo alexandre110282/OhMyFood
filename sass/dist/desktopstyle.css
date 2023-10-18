@@ -1,0 +1,36 @@
+@media (min-width: 1024px) {
+  #tutorial ol {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+  }
+
+  #tutorial li {
+    padding: 2% 5% 2% 4%;
+    margin-right: 0%;
+  }
+
+  #tutorial li::before {
+    margin-left: -20%;
+  }
+
+  .resto_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .btn {
+    width: 48%;
+  }
+
+  #restaurant {
+    margin-top: 5%;
+  }
+
+  .new {
+    right: unset;
+    margin-left: 34%;
+  }
+}
