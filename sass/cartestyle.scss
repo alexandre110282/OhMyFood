@@ -96,15 +96,28 @@ header {
 
   .localisation p {
     background-color: #E8E8E8;
-    padding: 3%;
-    box-shadow: inset 0 12px 6px -7px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    box-shadow: inset 0 8px 10px -6px rgba(0, 0, 0, 0.4);
   }
 
   .localisation__book {
     text-align: center;
     background-color: $main-color;
     margin-top: -16px;
-    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      width: 55%;
+    }
+
+    .localisation__book__text {
+      width: 67%;
+      margin-top: 3px;
+      margin-bottom: 25px;
+    }
+
   }
 
   a {
@@ -117,7 +130,7 @@ header {
   background-image: $secondary-color;
   ;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   padding: 1em;
   transition: 0.5s;
   color: white;
@@ -283,7 +296,7 @@ input[type="checkbox"].heart4:checked+label::before {
 
   img {
     width: 100%;
-    border-radius: 4% 4% 0 0;
+    border-radius: 13px 13px 0 0;
     object-fit: cover;
     height: 11em;
     transition: object-position 500ms ease-out, -o-object-position 500ms ease-out;

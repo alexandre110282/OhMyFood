@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+
+    #tutorial ol {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+
+    }
+
+    #tutorial li {
+        padding: 2% 4% 2% 4%;
+        margin-right: 0%;
+    }
+
+    #tutorial li::before {
+        margin-left: -20%;
+    }
+
+    .resto_btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn {
+        width: 43%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #restaurant {
+        margin-top: 5%;
+    }
+
+    .new {
+        right: unset;
+        margin-left: 34%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+
+    footer ul {
+        display: flex;
+        gap: 25px;
+    }
+
+    footer nav {
+        display: flex;
+        align-items: self-end;
+    }
+
+    footer .logo {
+        margin-left: 7%;
+        margin-right: 30px;
+        font-weight: 500;
+    }
+}
