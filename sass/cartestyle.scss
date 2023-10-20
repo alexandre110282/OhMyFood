@@ -1,7 +1,10 @@
 body {
   font-family: 'roboto', sans-serif;
-
   margin: 0;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 $main-color: rgba(153, 226, 208, 0.2);
@@ -56,7 +59,6 @@ $secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121
   top: 50%;
   right: 35%;
   border-radius: 50%;
-
   width: 80px;
   height: 80px;
   animation: fadeout 3s linear;
@@ -128,7 +130,6 @@ header {
 
 .btn_explore {
   background-image: $secondary-color;
-  ;
   margin: auto;
   margin-bottom: 50px;
   padding: 1em;
@@ -151,13 +152,10 @@ header {
 #tutorial {
   background-color: white;
 
-
   ol {
     list-style-type: none;
     counter-reset: compteur;
   }
-
-
 
   li {
     counter-increment: compteur;
@@ -169,6 +167,7 @@ header {
     display: flex;
     font-weight: bold;
     background-color: #e8f9f5;
+    position: relative;
 
     &::before {
       content: counter(compteur);
@@ -178,30 +177,18 @@ header {
       width: 20px;
       padding: 1px;
       text-align: center;
-      margin-left: -9%;
+      position: absolute;
+      left: -3%;
     }
+  }
+
+  h2 {
+    margin-left: 5%;
   }
 
   i {
     margin-right: 20px;
     margin-left: 20px;
-  }
-
-  p {
-    margin-bottom: 2px;
-    margin-top: 0%;
-  }
-
-  .tutorial__number {
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 50%;
-
-    background-color: #9356DC;
-    padding: 1px 7px;
-    text-align: center;
-    margin-left: -6.5%;
-    position: absolute;
   }
 
   .fa-store {
@@ -313,6 +300,7 @@ input[type="checkbox"].heart4:checked+label::before {
 
     .ville__resto {
       padding: 3%;
+      color: black;
     }
 
     p,
@@ -325,7 +313,8 @@ input[type="checkbox"].heart4:checked+label::before {
 .new {
 
   position: absolute;
-  right: 10%;
+  right: 5%;
+  top: 5%;
   background-color: #99e2d0;
   border-radius: 3px;
   padding: 0.3em 0.8rem;
@@ -338,17 +327,13 @@ input[type="checkbox"].heart4:checked+label::before {
 main {
   align-items: center;
   padding-bottom: 2%;
-
-  h2 {
-    margin-left: 4%;
-    padding-top: 1%;
-  }
 }
 
 .btn {
   border-radius: 13px;
   background-color: white;
   margin-bottom: 4%;
+  position: relative;
 
 }
 
@@ -357,13 +342,9 @@ footer {
   color: white;
 
   .logo {
-    margin-left: 9%;
+    margin-left: 5%;
     padding-top: 6%;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
+    font-weight: 500;
   }
 
   li {
@@ -375,8 +356,8 @@ footer {
     margin-left: 1px;
     width: 25px;
   }
-}
 
-.work {
-  background-color: green;
+  a {
+    color: white;
+  }
 }
