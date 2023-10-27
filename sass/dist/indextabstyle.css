@@ -40,14 +40,11 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
+    align-items: baseline;
   }
   footer ul {
     display: flex;
     gap: 16px;
-  }
-  footer nav {
-    display: flex;
-    align-items: self-end;
   }
   footer .logo {
     margin-left: 7%;

@@ -25,10 +25,6 @@
     width: 78%;
   }
 
-  header img {
-    margin-bottom: 12%;
-  }
-
   .fa-heart {
     padding-left: 35px;
   }
@@ -41,7 +37,7 @@
 
   footer ul {
     display: flex;
-    gap: 25px;
+    gap: 11px;
   }
 
   footer nav {
