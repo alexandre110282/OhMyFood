@@ -1,0 +1,29 @@
+@media (min-width: 1024px) {
+  main #tutorial ol {
+    margin-top: -20px;
+  }
+  main #tutorial i {
+    margin-right: 27px;
+    margin-left: 37px;
+  }
+  main #tutorial li {
+    width: 325px;
+  }
+  main #restaurant {
+    padding-top: 1%;
+  }
+  main #restaurant .resto_btn {
+    margin-left: 3.5%;
+    width: 93%;
+  }
+
+  footer h3 {
+    padding-top: 4%;
+  }
+  footer ul {
+    gap: 90px;
+  }
+  footer nav {
+    margin-right: 20px;
+  }
+}

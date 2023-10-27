@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+  h2 {
+    margin-left: 4%;
+  }
+
+  header .location__book h1 {
+    width: unset;
+  }
+
+  main #tutorial h2 {
+    margin-bottom: 0;
+  }
+  main #tutorial ol {
+    display: flex;
+    width: 90%;
+    gap: 3%;
+    justify-content: center;
+    margin-top: 0;
+  }
+  main #tutorial i {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  main #restaurant {
+    margin-top: 50px;
+  }
+  main #restaurant .resto_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main #restaurant .resto_btn .btn {
+    width: 43%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
+  footer ul {
+    display: flex;
+    gap: 16px;
+  }
+  footer nav {
+    display: flex;
+    align-items: self-end;
+  }
+  footer .logo {
+    margin-left: 7%;
+    margin-right: 30px;
+    font-weight: 500;
+  }
+  footer h3 {
+    margin-left: 23px;
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+
+    h2 {
+        margin-left: 4%;
+    }
+
+    header {
+        .location__book {
+            h1 {
+                width: unset;
+            }
+        }
+    }
+
+    main {
+        #tutorial {
+            h2 {
+                margin-bottom: 0;
+            }
+
+            ol {
+                display: flex;
+                width: 90%;
+                gap: 3%;
+                justify-content: center;
+                margin-top: 0;
+            }
+
+            i {
+                margin-left: 25px;
+                margin-right: 10px;
+            }
+        }
+
+        #restaurant {
+            margin-top: 50px;
+
+            .resto_btn {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+
+
+                .btn {
+                    width: 43%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+
+        ul {
+            display: flex;
+            gap: 16px;
+        }
+
+        nav {
+            display: flex;
+            align-items: self-end;
+        }
+
+        .logo {
+            margin-left: 7%;
+            margin-right: 30px;
+            font-weight: 500;
+        }
+
+        h3 {
+            margin-left: 23px;
+            margin-right: 30px;
+        }
+    }
+}

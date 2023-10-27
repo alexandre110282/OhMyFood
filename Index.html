@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/58158fb210.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="sass/dist/cartestyle.css">
-    <link rel="stylesheet" href="sass/dist/desktopcartestyle.css">
+    <link rel="stylesheet" href="sass/dist/indexstyle.css">
+    <link rel="stylesheet" href="sass/dist/indextabstyle.css">
+    <link rel="stylesheet" href="sass/dist/indexdesktopstyle.css">
 </head>
 
 <body>
@@ -18,14 +21,16 @@
     <span class="loader"></span>
 
     <header>
-        <h1 class="logo">Ohmyfood</h1>
-        <div class="localisation">
-            <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        <div class="logo">
+            <img src="images/logo/ohmyfood.png" class="img__logo" alt="img__logo">
         </div>
-
-        <div class="localisation__book">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p class="localisation__book__text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <div class="location">
+            <p><i class="fas fa-map-marker-alt">
+                </i>Paris, Belleville</p>
+        </div>
+        <div class="location__book">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p class="location__book__text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
             <a href="#restaurant">
                 <div class="btn_explore">
                     <p> Explorer nos restaurants</p>
@@ -33,74 +38,59 @@
             </a>
         </div>
     </header>
-
     <main>
         <section id="tutorial">
             <h2>Fonctionnement</h2>
-            <ol>
-                <li>
-                    <i class="fas fa-mobile-alt"></i>Choisissez un restaurant
-                </li>
-                <li>
-                    <i class="fas fa-list-ul"></i>Composez votre menu
-                </li>
-                <li>
-                    <i class="fas fa-store"></i>Dégustez au restaurant
-                </li>
-            </ol>
+            <div class="tutorial__btn">
+                <ol>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant
+                    </li>
+                    <li>
+                        <i class="fas fa-list-ul"></i>Composez votre menu
+                    </li>
+                    <li>
+                        <i class="fas fa-store"></i>Dégustez au restaurant
+                    </li>
+                </ol>
+            </div>
         </section>
-
         <section id="restaurant">
             <h2>Restaurants</h2>
-
-
             <div class="resto_btn">
-
-
                 <div class="btn">
                     <a href="palettegout.html">
-
-
                         <img src="images/restaurants/palettegout.jpg" alt="La palette du goût">
-
                         <span class="new">
                             Nouveau
                         </span>
-
-
                         <div class="ville">
                             <div class="ville__resto">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
-                            <div class="check">
-                                <input type="checkbox" class="heart1" id="heart1">
-                                <label for="heart1"></label>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
-
                 <div class="btn">
-
                     <a href="noteenchantee.html">
-
                         <img src="images/restaurants/noteenchantee.jpg" alt="La note enchantée">
-
                         <span class="new">
                             Nouveau
                         </span>
-
                         <div class="ville">
                             <div class="ville__resto">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
-                            <div class="check">
-                                <input type="checkbox" class="heart2" id="heart2">
-                                <label for="heart2"></label>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
-
                         </div>
                     </a>
                 </div>
@@ -112,14 +102,13 @@
                                 <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
-                            <div class="check">
-                                <input type="checkbox" class="heart3" id="heart3">
-                                <label for="heart3"></label>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
-
                 <div class="btn"><a href="delicedessens.html"><img src="images/restaurants/delicedessens.jpg"
                             alt="Le délice de sens">
                         <div class="ville">
@@ -127,21 +116,19 @@
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <div class="check">
-                                <input type="checkbox" class="heart4" id="heart4">
-                                <label for="heart4"></label>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer>
-        <h3 class="logo">Ohmyfood</h3>
-        <nav class="menu">
+        <h3>Ohmyfood</h3>
+        <nav>
             <ul>
                 <li><i class="fas fa-utensils"></i>Proposez un restaurant</li>
                 <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
@@ -150,7 +137,6 @@
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>
