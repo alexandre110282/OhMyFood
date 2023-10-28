@@ -4,6 +4,7 @@ body {
 }
 
 
+
 $secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 
 
@@ -61,13 +62,9 @@ $secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121
 
 header {
   .title {
-    text-align: center;
-    font-family: 'shrikhand', serif;
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    margin-right: 25%;
-    gap: 17%;
+    justify-content: center;
+    position: relative;
   }
 
   a {
@@ -75,11 +72,25 @@ header {
     color: black;
   }
 
-  img {
+  .img__header {
     object-fit: cover;
     width: 100%;
     height: 20em;
   }
+
+  .img__logo {
+    width: 197px;
+    padding: 5px 19px 0px 19px;
+    height: 36px;
+  }
+
+  .fa-arrow-left {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+
+  }
+
 }
 
 .fa-regular {
@@ -213,11 +224,11 @@ main {
   }
 }
 
-h3 {
+.allmenu h3 {
   margin-left: 10px;
 }
 
-h3::after {
+.allmenu h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -298,26 +309,29 @@ h3::after {
 
 
 footer {
-  background-color: #303030;
+  background-color: #353535;
   color: white;
 
-  .logo {
-    margin: 0 37px 37px 35px;
+  .footer__logo {
+    margin-left: 38px;
     padding-top: 6%;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
+    font-weight: 500;
+    font-family: 'Shrikhand', serif;
   }
 
   li {
     list-style-type: none;
+    text-decoration: none;
     padding-bottom: 2%;
   }
 
   i {
     margin-left: 1px;
     width: 25px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
