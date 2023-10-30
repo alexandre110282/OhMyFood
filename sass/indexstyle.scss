@@ -1,3 +1,8 @@
+$main-color: #f6f6f6;
+$secondary-color: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+
+
 body {
   font-family: 'roboto', sans-serif;
   margin: 0;
@@ -8,8 +13,6 @@ body {
   }
 }
 
-$main-color: #f6f6f6;
-$secondary-color: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 
 
@@ -151,7 +154,6 @@ header {
     align-items: center;
 
     p {
-      width: 375px;
       display: flex;
       justify-content: center;
       gap: 17px;

@@ -4,7 +4,7 @@ body {
 }
 
 
-
+$main-color:#f6f6f6;
 $secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 
 
@@ -93,6 +93,10 @@ header {
 
 }
 
+.logo__heart {
+  background-color: blue;
+}
+
 .fa-regular {
   opacity: 1;
   position: absolute;
@@ -100,8 +104,6 @@ header {
   font-size: 25px;
   width: 25px;
   height: 25px;
-  top: 40px;
-  right: 45px;
 
 
   &:active {
@@ -111,8 +113,6 @@ header {
 
 .fa-solid {
   position: absolute;
-  top: 40px;
-  right: 45px;
   opacity: 0;
   z-index: 2;
   background: linear-gradient(360deg, #FF79DA, #9356DC);
@@ -137,7 +137,7 @@ header {
 }
 
 main {
-  background-color: #e8f9f5;
+  background-color: $main-color;
   border-radius: 30px 30px 0px 0px;
   margin-top: -3em;
   position: relative;
@@ -146,8 +146,10 @@ main {
   .logo {
     padding-top: 7%;
     margin: 5%;
-
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
   ul {
@@ -162,10 +164,11 @@ main {
     background-color: white;
     list-style-type: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
-    height: 70px;
+    height: 69px;
     width: 100%;
+    position: relative;
 
     .check {
       color: white;
@@ -186,13 +189,22 @@ main {
 
     &:hover>.check {
       background-color: #99E2D0;
-      width: 5em;
+      width: 59px;
+      height: 69px;
       transition: all 500ms ease-in;
       transform-origin: right;
+
     }
 
     &:hover>.check i {
       display: block;
+    }
+
+    .description {
+      display: flex;
+      flex: 80%;
+      justify-content: space-between;
+      overflow: hidden;
     }
 
     .price {
@@ -209,7 +221,6 @@ main {
     .menu {
       padding: 12px;
       overflow: hidden;
-      width: 19em;
       margin-right: auto;
     }
 
@@ -217,7 +228,6 @@ main {
       margin: 2px;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 100%;
       white-space: nowrap;
     }
 

@@ -126,7 +126,6 @@ header .location {
   align-items: center;
 }
 header .location p {
-  width: 375px;
   display: flex;
   justify-content: center;
   gap: 17px;
