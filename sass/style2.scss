@@ -65,6 +65,7 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    padding: 14px 89px 13px 89px;
   }
 
   a {
@@ -75,7 +76,7 @@ header {
   .img__header {
     object-fit: cover;
     width: 100%;
-    height: 20em;
+    height: 275px;
   }
 
   .img__logo {
@@ -88,18 +89,20 @@ header {
     position: absolute;
     top: 15px;
     left: 25px;
-
+    padding-top: 14px;
   }
 
 }
 
 .logo__heart {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+
 }
 
 .fa-regular {
   opacity: 1;
-  position: absolute;
+
   z-index: 2;
   font-size: 25px;
   width: 25px;
@@ -144,12 +147,9 @@ main {
   padding-bottom: 2%;
 
   .logo {
-    padding-top: 7%;
-    margin: 5%;
-    font-size: 30px;
+    padding: 1rem 2rem 0 1rem;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
   }
 
   ul {
@@ -229,6 +229,8 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      height: 21px;
+      font-size: 18px;
     }
 
   }
@@ -236,6 +238,7 @@ main {
 
 .allmenu h3 {
   margin-left: 10px;
+  margin-top: 40px;
 }
 
 .allmenu h3::after {
@@ -305,7 +308,9 @@ main {
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  width: 11em;
+  width: 186px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   &:hover {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);

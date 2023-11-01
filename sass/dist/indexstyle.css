@@ -113,9 +113,12 @@ footer {
 header {
   text-align: center;
 }
+header .logo {
+  padding: 14px 89px 13px 89px;
+}
 header img {
   width: 197px;
-  padding: 5px 19px 0px 19px;
+  padding: 0px 19px 0px 16px;
   height: 36px;
 }
 header .location {
@@ -124,6 +127,7 @@ header .location {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50px;
 }
 header .location p {
   display: flex;
@@ -134,18 +138,20 @@ header .location p {
 header .location__book {
   text-align: center;
   background-color: #f6f6f6;
-  margin-top: -16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 header .location__book h1 {
-  width: 302px;
+  width: 17.1875rem;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 30px;
 }
 header .location__book .location__book__text {
-  width: 67%;
-  margin-top: 3px;
-  margin-bottom: 25px;
+  width: 19.6875rem;
+  height: 4.25rem;
+  margin-bottom: 0;
 }
 header .btn_explore {
   background-image: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -171,7 +177,6 @@ main #tutorial {
   background-color: white;
 }
 main #tutorial ol {
-  width: 80%;
   list-style-type: none;
   counter-reset: compteur;
 }
@@ -179,9 +184,11 @@ main #tutorial li {
   counter-increment: compteur;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  padding: 20px 0px 20px 0px;
+  width: 92%;
+  height: 72px;
   margin-top: 5%;
   display: flex;
+  align-items: center;
   font-weight: bold;
   background-color: #f6f6f6;
   position: relative;
@@ -195,7 +202,8 @@ main #tutorial li::before {
   padding: 1px;
   text-align: center;
   position: absolute;
-  left: -3%;
+  left: -0.6rem;
+  font-weight: 500;
 }
 main #tutorial li:hover {
   background-color: #f2eafb;
@@ -206,9 +214,10 @@ main #tutorial h2 {
   margin-bottom: 30px;
 }
 main #tutorial i {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 24px 27px 27px 34px;
   width: 13px;
+  height: 19px;
+  font-size: large;
   color: #7e7e7e;
 }
 main #tutorial .fa-store {
@@ -250,7 +259,7 @@ main #restaurant .btn .ville {
   margin-left: 4%;
 }
 main #restaurant .btn .ville .ville__resto {
-  padding: 3%;
+  padding: 0.5rem;
   color: black;
 }
 main #restaurant .btn .ville p,

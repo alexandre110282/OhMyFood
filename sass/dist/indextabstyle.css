@@ -12,14 +12,22 @@
   }
   main #tutorial ol {
     display: flex;
-    width: 90%;
-    gap: 3%;
-    justify-content: center;
     margin-top: 0;
+    flex-direction: column;
+    align-items: center;
   }
-  main #tutorial i {
-    margin-left: 25px;
-    margin-right: 10px;
+  main #tutorial ol li {
+    width: 45%;
+  }
+  main #tutorial ol .tutorial__btn__one {
+    right: 166px;
+  }
+  main #tutorial ol .tutorial__btn__two {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main #tutorial ol .tutorial__btn__three {
+    left: 166px;
   }
   main #restaurant {
     margin-top: 50px;
