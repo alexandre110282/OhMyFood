@@ -127,7 +127,7 @@ main ul {
 main li {
   border-radius: 11px;
   margin-top: 12px;
-  box-shadow: 1px 1px 5px 3px #99E2D0;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
   list-style-type: none;
   display: flex;
@@ -193,6 +193,7 @@ main li p {
 
 .allmenu h3 {
   margin-left: 10px;
+  margin-top: 40px;
 }
 
 .allmenu h3::after {

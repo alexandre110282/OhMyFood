@@ -160,7 +160,7 @@ main {
   li {
     border-radius: 11px;
     margin-top: 12px;
-    box-shadow: 1px 1px 5px 3px #99E2D0;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
     background-color: white;
     list-style-type: none;
     display: flex;
@@ -216,6 +216,8 @@ main {
 
     .dish {
       font-weight: bold;
+      height: 21px;
+      font-size: 18px;
     }
 
     .menu {
@@ -229,8 +231,8 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      height: 21px;
-      font-size: 18px;
+      height: 19px;
+      font-size: 15px;
     }
 
   }
