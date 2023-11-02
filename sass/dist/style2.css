@@ -119,6 +119,8 @@ main .logo {
   padding: 1rem 2rem 0 1rem;
   display: flex;
   justify-content: space-between;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 main ul {
   width: 93%;
@@ -176,6 +178,8 @@ main li .price {
 }
 main li .dish {
   font-weight: bold;
+  height: 21px;
+  font-size: 18px;
 }
 main li .menu {
   padding: 12px;
@@ -187,13 +191,17 @@ main li p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 21px;
-  font-size: 18px;
+  height: 19px;
+  font-size: 15px;
 }
 
 .allmenu h3 {
   margin-left: 10px;
   margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 17rem;
 }
 
 .allmenu h3::after {

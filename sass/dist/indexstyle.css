@@ -152,6 +152,7 @@ header .location__book .location__book__text {
   width: 19.6875rem;
   height: 4.25rem;
   margin-bottom: 0;
+  font-size: 18px;
 }
 header .btn_explore {
   background-image: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -168,6 +169,7 @@ header .btn_explore:hover {
 }
 header .btn_explore p {
   margin: 0;
+  font-size: 16px;
 }
 
 main {
@@ -189,7 +191,8 @@ main #tutorial li {
   margin-top: 5%;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
   background-color: #f6f6f6;
   position: relative;
 }
@@ -209,13 +212,12 @@ main #tutorial li::before {
   align-items: center;
   justify-content: center;
 }
-main #tutorial li:hover {
-  background-color: #f2eafb;
-}
 main #tutorial h2 {
   margin-left: 5%;
   margin-top: 35px;
   margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
 }
 main #tutorial i {
   margin: 24px 27px 27px 34px;
@@ -251,6 +253,10 @@ main #restaurant .btn .new {
   color: #008766;
   font-size: 0.9rem;
 }
+main #restaurant .btn h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
 main #restaurant .btn img {
   width: 100%;
   border-radius: 13px 13px 0 0;
@@ -266,9 +272,13 @@ main #restaurant .btn .ville .ville__resto {
   padding: 0.5rem;
   color: black;
 }
-main #restaurant .btn .ville p,
 main #restaurant .btn .ville h3 {
   margin: 0;
+  font-size: 18px;
+}
+main #restaurant .btn .ville p {
+  margin: 0;
+  font-size: 17px;
 }
 main #restaurant .btn .heart {
   position: relative;

@@ -185,6 +185,7 @@ header {
       width: 19.6875rem;
       height: 4.25rem;
       margin-bottom: 0;
+      font-size: 18px;
     }
 
   }
@@ -205,6 +206,7 @@ header {
 
     p {
       margin: 0;
+      font-size: 16px;
     }
   }
 }
@@ -230,7 +232,8 @@ main {
       margin-top: 5%;
       display: flex;
       align-items: center;
-      font-weight: bold;
+      font-weight: 500;
+      font-size: 16px;
       background-color: $main-color;
       position: relative;
 
@@ -256,6 +259,8 @@ main {
       margin-left: 5%;
       margin-top: 35px;
       margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 700;
     }
 
     i {
@@ -298,6 +303,11 @@ main {
         font-size: .9rem;
       }
 
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
       img {
         width: 100%;
         border-radius: 13px 13px 0 0;
@@ -315,9 +325,15 @@ main {
           color: black;
         }
 
-        p,
+
         h3 {
           margin: 0;
+          font-size: 18px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 17px;
         }
       }
 

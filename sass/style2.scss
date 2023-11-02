@@ -150,6 +150,8 @@ main {
     padding: 1rem 2rem 0 1rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.75rem;
+    font-weight: 400;
   }
 
   ul {
@@ -241,6 +243,10 @@ main {
 .allmenu h3 {
   margin-left: 10px;
   margin-top: 40px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 17rem;
 }
 
 .allmenu h3::after {
