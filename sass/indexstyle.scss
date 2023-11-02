@@ -1,8 +1,6 @@
 $main-color: #f6f6f6;
 $secondary-color: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
 
-
-
 body {
   font-family: 'roboto', sans-serif;
   margin: 0;
@@ -12,9 +10,6 @@ body {
     color: white;
   }
 }
-
-
-
 
 @keyframes fadein {
   0% {
@@ -65,8 +60,6 @@ body {
   }
 }
 
-
-
 .container {
   position: fixed;
   top: 0;
@@ -75,7 +68,6 @@ body {
   bottom: 0;
   text-align: center;
   animation: fadeout 3s forwards;
-
 }
 
 .container:before {
@@ -83,7 +75,6 @@ body {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
-
 }
 
 .container .spinner-frame {
@@ -116,7 +107,6 @@ body {
 }
 
 .container .spinner-frame .spinner-bar {
-
   width: 50%;
   height: 50%;
   position: absolute;
@@ -126,9 +116,6 @@ body {
   animation: spin 3s linear;
   transform-origin: 100% 100%;
 }
-
-
-
 
 header,
 main,
@@ -143,7 +130,6 @@ header {
   .logo {
     padding: 14px 89px 13px 89px;
   }
-
 
   img {
     width: 197px;
@@ -165,6 +151,7 @@ header {
       gap: 17px;
       padding-bottom: 15px;
     }
+
   }
 
   .location__book {
@@ -208,9 +195,9 @@ header {
       margin: 0;
       font-size: 16px;
     }
+
   }
 }
-
 
 main {
   padding-bottom: 2%;
@@ -291,7 +278,6 @@ main {
       height: 251px;
       position: relative;
 
-
       .new {
         position: absolute;
         right: 5%;
@@ -324,7 +310,6 @@ main {
           padding: 0.5rem;
           color: black;
         }
-
 
         h3 {
           margin: 0;
@@ -372,16 +357,15 @@ main {
         width: 25px;
         height: 25px;
 
-
         &:hover {
           opacity: 1;
           transition: all 0.3s linear 0s;
         }
       }
     }
+
   }
 }
-
 
 footer {
   background-color: #353535;

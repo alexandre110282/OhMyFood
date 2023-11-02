@@ -1,5 +1,4 @@
 @media (min-width: 1024px) {
-
     header {
         .location__book {
             h1 {
@@ -18,7 +17,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
 
             h2 {
                 position: relative;
@@ -55,16 +53,12 @@
                 margin-right: 27px;
                 margin-left: 37px;
             }
-
-
         }
 
         #restaurant {
-
             padding-top: 1%;
 
             .resto_btn {
-
                 margin-left: 3.5%;
                 width: 93%;
             }
@@ -72,7 +66,6 @@
             h2 {
                 margin-left: 7%;
             }
-
         }
     }
 
@@ -87,7 +80,6 @@
 
         nav {
             margin-right: 20px;
-
         }
     }
 }

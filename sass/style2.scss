@@ -3,20 +3,16 @@ body {
   margin: 0;
 }
 
-
 $main-color:#f6f6f6;
 $secondary-color: linear-gradient(360deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 
-
 @keyframes slide-in-left {
   0% {
-
     transform: translateX(-1000px);
     opacity: 0;
   }
 
   100% {
-
     transform: translateX(0);
     opacity: 1;
   }
@@ -91,23 +87,19 @@ header {
     left: 25px;
     padding-top: 14px;
   }
-
 }
 
 .logo__heart {
   display: flex;
   align-items: center;
-
 }
 
 .fa-regular {
   opacity: 1;
-
   z-index: 2;
   font-size: 25px;
   width: 25px;
   height: 25px;
-
 
   &:active {
     opacity: 0;
@@ -126,14 +118,11 @@ header {
   width: 25px;
   height: 25px;
 
-
   &:hover {
     opacity: 1;
     transition: all 0.3s linear 0s;
   }
 }
-
-
 
 .logo {
   font-family: 'shrikhand', serif;
@@ -195,7 +184,6 @@ main {
       height: 69px;
       transition: all 500ms ease-in;
       transform-origin: right;
-
     }
 
     &:hover>.check i {
@@ -301,7 +289,6 @@ main {
   }
 }
 
-
 .order {
   display: flex;
   justify-content: center;
@@ -329,7 +316,6 @@ main {
     margin: 0;
   }
 }
-
 
 footer {
   background-color: #353535;
