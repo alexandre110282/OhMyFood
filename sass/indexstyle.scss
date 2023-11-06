@@ -33,8 +33,11 @@ body {
   100% {
     opacity: 1;
     display: none;
+    visibility: hidden;
   }
 }
+
+
 
 @keyframes spin {
   0% {
@@ -68,6 +71,7 @@ body {
   bottom: 0;
   text-align: center;
   animation: fadeout 3s forwards;
+  -webkit-animation: fadeout 3s forwards;
 }
 
 .container:before {
