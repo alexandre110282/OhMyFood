@@ -1,3 +1,6 @@
+@import url("Animations.css");
+@import url("indextabstyle.css");
+@import url("indexdesktopstyle.css");
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -7,47 +10,6 @@ body a {
   color: white;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeout {
-  99% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    display: none;
-    visibility: hidden;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    background: #FF79DA;
-    opacity: 0.9;
-  }
-  50% {
-    transform: rotate(180deg);
-    background: #FF79DA;
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    background: #FF79DA;
-    opacity: 0.9;
-  }
-}
 .container {
   position: fixed;
   top: 0;
